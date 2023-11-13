@@ -2,7 +2,7 @@
 layout: post
 title:  "MO-VLN: A Multi-Task Benchmark for Open-set Zero-Shot Vision-and-Language Navigation"
 date:   2023-06-18 00:00:00 +00:00
-image: /project/movln/images/task.png
+image: /project/movln/images/pictures.jpg
 venue: <em> arxiv</em>, 2023.
 categories: research
 authors: <a href="https://scholar.google.com/citations?user=Iwj59kkAAAAJ">Xiwen Liang</a>*, Liang Ma*, <strong>Shanshan Guo</strong>, <a href="https://scholar.google.com/citations?hl=en&user=OEPMQEMAAAAJ">Jianhua Han</a>, <a href="https://xuhangcn.github.io/">Hang Xu</a>, Shikui Ma, <a href="https://lemondan.github.io/">Xiaodan Liang</a> (*equal contribution)
