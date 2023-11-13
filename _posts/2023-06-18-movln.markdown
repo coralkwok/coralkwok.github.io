@@ -5,7 +5,7 @@ date:   2023-06-18 00:00:00 +00:00
 image: /project/movln/images/task.png
 venue: <em> arxiv</em>, 2023.
 categories: research
-authors: "[Xiwen Liang](https://scholar.google.com/citations?user=Iwj59kkAAAAJ)*, Liang Ma*, <strong>Shanshan Guo</strong>, [Jianhua Han](https://scholar.google.com/citations?hl=en&user=OEPMQEMAAAAJ), [Hang Xu](https://xuhangcn.github.io/), Shikui Ma, [Xiaodan Liang](https://lemondan.github.io/)(*equal contribution)"
+authors: <a href="https://scholar.google.com/citations?user=Iwj59kkAAAAJ">Xiwen Liang</a>*, Liang Ma*, <strong>Shanshan Guo</strong>, <a href="https://scholar.google.com/citations?hl=en&user=OEPMQEMAAAAJ">Jianhua Han</a>, <a href="https://xuhangcn.github.io/">Hang Xu</a>, Shikui Ma, <a href="https://lemondan.github.io/">Xiaodan Liang</a> (*equal contribution)
 projectpage: https://mligg23.github.io/MO-VLN-Site/
 code: https://github.com/liangcici/MO-VLN
 video: https://www.youtube.com/watch?v=dJtuuctvw0s&t=48s
