@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <meta name="google-site-verification" content="google6a0215df3331a32a.html" />
+
+</head>
+
+
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>
+                Shanshan Guo
+              </h1>
+              <p>
+                Hi! I am a undergraduate student at <a href="http://english.neu.edu.cn/">Northeastern University(CN)</a>. I'am looking for cooperation opportunities.
+              </p>
+              <p>
+                Before that, I had the privilege to be mentored by the following advisors, who led me into the world of computer vision from nowhere.
+              <li type="circle"> <a href="https://ymingxie.github.io/">Yiming Xie</a> and <a href="https://jianghz.me/">Prof.Huaizu Jiang</a>, Northeastern University, US </li>   
+              <li type="circle"> <a href="https://scholar.google.com/citations?user=Iwj59kkAAAAJ">Xiwen Liang</a> and <a href="https://lemondan.github.io/">Prof.Xiaodan Liang</a>, SUN YAT-SEN UNIVERSITY, CN </li>   
+              </br>
+              <p style="text-align:center">
+                <!-- <a href="https://drive.google.com/file/d/1k5PWYF4q4BPy3Uz6EP5fqJG2En2qK0Fm/view?usp=sharing">CV</a> / -->
+                <a target="_blank" href="https://mailhide.io/e/NcwrC5nH"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/coralkwok">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?hl=en&user=EuYMQV4AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <!--<a href="https://www.linkedin.com/in/kyle-sargent-784006134/"> LinkedIn </a> &nbsp;/&nbsp;-->
+                <a href="https://twitter.com/coralkuo"> Twitter </a> &nbsp;/&nbsp;
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="/img/IMAGE_shanshan.jpg">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                I'm interested in computer vision. I enjoy developing techniques that produce stunning visual artifacts with practical uses. I also pursue research on 3D vision.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.0%;width:37%;vertical-align:middle;horizontal-align:middle;min-width:120px">
+              {% if post.image %}
+              <center>
+              <img align='middle' src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;horizontal-align:middle" />
+              </center>
+              {% endif %}
+              {% if post.video %}
+              <video height=157 width=269 class="demoVideo" controls autoplay>
+              <source src="{{post.video}}" type="video/mp4">Your browser does not support the video tag.
+              </video>
+              {% endif %}
+            </td>
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              <br>
+              {{post.authors}}
+
+              <br>
+              {{post.venue}}
+              {% if post.venue2 %}
+              <br>
+              {{post.venue2}}
+              {% endif %}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.thesis %}
+              <a href="{{post.thesis}}">thesis</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.projectpage %}
+              <a href="{{post.projectpage}}">project page</a> /
+              {% endif %}
+              {% if post.visualresults %}
+              <a href="{{post.visualresults}}">visual results</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <!--Experience-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Experience</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img width="130" height="130" src="./img/NEU-US.jpeg">
+            <!-- <img class="image max-width-400" src="img/dummay-img.png"> -->
+          </div>
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <b>3D Vision Group, Northeastern University, US</b><br>
+              Research Intern<br>
+              Jun. 2023 - Oct. 2023<br>
+              Work with <a href="https://ymingxie.github.io/">Yiming Xie</a> and <a href="https://jianghz.me/">Huaizu Jiang</a><br>
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img width="140" height="81" src="./img/SYSU.jpeg">
+            <!-- <img class="image max-width-400" src="img/dummay-img.png"> -->
+          </div>
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <b>HCP-I2 Lab, SUN YAT-SEN UNIVERSITY, CN</b><br>
+              Research Intern<br>
+              Oct. 2022 - Jun. 2023<br>
+              Work with <a href="https://scholar.google.com/citations?user=Iwj59kkAAAAJ">Xiwen Liang</a> and <a href="https://lemondan.github.io/">Xiaodan Liang</a><br>
+            </p>
+          </div>
+        </div>
+        <!--End Experience-->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <h2>Miscellanea</h2>
+            </td>
+          </tr>
+          <!-- <tr>
+              <td>
+                  <strong>Conference Reviewer:</strong> ECCV 2022, IROS 2022/2023, AAAI 2024.
+              </td>
+          </tr> -->
+          <tr>
+              <td>
+                  <strong>Personal Interests:</strong>
+                  <ul>
+                      <li>I am a huge fan of Lee Dong-wook.</li>
+                      <li>I like art and history related.</li>
+                  </ul>
+              </td>
+          </tr>
+        </tbody></table>
+          
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="text-align:center;">
+              <!-- RevolverMaps globe -->
+              <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5mu02nbkyzf&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:center;">
+              <!-- Last update info -->
+              <p style="font-size:small;">Last update: Nov, 2023</p>
+            </td>
+          </tr>
+      </tbody></table> 
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Built with the
+                <a style="font-size:small;" href="https://github.com/leonidk/new_website/">Jekyll fork</a> by
+                <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman </a> of
+                <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
+

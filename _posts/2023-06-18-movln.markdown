@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "MO-VLN: A Multi-Task Benchmark for Open-set Zero-Shot Vision-and-Language Navigation"
+date:   2023-06-18 00:00:00 +00:00
+image: /project/movln/images/task.png
+venue: <em> arxiv</em>, 2023.
+categories: research
+authors: "Xiwen Liang∗, Liang Ma∗, <strong>Shanshan Guo</strong>, Jianhua Han, Hang Xu, Shikui Ma, Xiaodan Liang(*equal contribution)"
+projectpage: https://mligg23.github.io/MO-VLN-Site/
+code: https://github.com/liangcici/MO-VLN
+video: https://www.youtube.com/watch?v=dJtuuctvw0s&t=48s
+arxiv: https://arxiv.org/abs/2306.10322
+---
+In this paper, we introduce MO-VLN, a benchmark for multi-task visual language navigation in a 3D simulator developed using Unreal Engine 5 and rendered by real scenes. We leverage LLMs to eliminate the need for manual construction of diverse, high-quality data of instruction types
+annotation. We implement multiple zero-shot open-set tasks in the benchmark: 1) Target conditions navigation given a specific object category (e.g., "fork"); 2) Goal-conditional navigation given simple instructions (e.g., "Search and move toward the tennis ball"); 3) Following step-by-step instructions; 4) Finding abstract objects on a high-level basis Instructions (e.g., "I'm thirsty").
