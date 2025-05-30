@@ -16,5 +16,5 @@ authors: >
 projectpage: https://mligg23.github.io/CorNav-Site/
 code: https://github.com/liangcici/MO-VLN
 video: https://www.youtube.com/watch?v=dJtuuctvw0s&t=48s
-paper: https://aclanthology.org/2024.findings-acl.745.pdf
+arxiv: https://aclanthology.org/2024.findings-acl.745.pdf
 ---
