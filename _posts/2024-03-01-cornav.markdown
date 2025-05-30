@@ -1,0 +1,19 @@
+---
+layout: post
+title:  <a href="https://mligg23.github.io/CorNav-Site/">CorNav:Autonomous Agent with Self-Corrected Planning for Zero-Shot Vision-and-Language Navigation</a>
+date:   2024-03-01 00:00:00 +00:00
+image: /project/cornav/CorNav.png
+venue: <em> ACL findings</em>, 2024.
+categories: research
+authors: <a href="https://scholar.google.com/citations?user=Iwj59kkAAAAJ">Xiwen Liang</a>*, 
+<a href="https://github.com/mligg23">Liang Ma</a>*, 
+<strong>Shanshan Guo</strong>, 
+<a href="https://scholar.google.com/citations?hl=en&user=OEPMQEMAAAAJ">Jianhua Han</a>, 
+<a href="https://xuhangcn.github.io/">Hang Xu</a>, 
+<a href="https://www.semanticscholar.org/author/Shikui-Ma/1388448155">Shikui Ma</a>, 
+<a href="https://lemondan.github.io/">Xiaodan Liang</a> (*equal contribution)
+projectpage: https://mligg23.github.io/CorNav-Site/
+code: https://github.com/liangcici/MO-VLN
+video: https://www.youtube.com/watch?v=dJtuuctvw0s&t=48s
+paper: https://aclanthology.org/2024.findings-acl.745.pdf
+---
